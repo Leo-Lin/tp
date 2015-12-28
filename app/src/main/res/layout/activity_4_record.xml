@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <include layout="@layout/compoment_electric_no" />
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+
+                <taoyuan.taipower.base.AnalogNumberPicker
+                    android:id="@+id/analogNumberPicker1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+
+                <taoyuan.taipower.base.AnalogNumberPicker
+                    android:id="@+id/analogNumberPicker2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+
+                <taoyuan.taipower.base.AnalogNumberPicker
+                    android:id="@+id/analogNumberPicker3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+
+                <taoyuan.taipower.base.AnalogNumberPicker
+                    android:id="@+id/analogNumberPicker4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20">
+
+                <taoyuan.taipower.base.AnalogNumberPicker
+                    android:id="@+id/analogNumberPicker5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次電表指數" />
+
+            <EditText
+                android:id="@+id/editTextDegree1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:padding="8dp"
+                android:text="9" />
+
+            <EditText
+                android:id="@+id/editTextDegree2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:padding="8dp"
+                android:text="9" />
+
+            <EditText
+                android:id="@+id/editTextDegree3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:padding="8dp"
+                android:text="9" />
+
+            <EditText
+                android:id="@+id/editTextDegree4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:padding="8dp"
+                android:text="9" />
+
+            <EditText
+                android:id="@+id/editTextDegree5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:padding="8dp"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/buttonSaveDegree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="輸入指數"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <include layout="@layout/bottom_bar" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <include layout="@layout/compoment_electric_no" />
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最佳節電紀錄" />
+
+                <TextView
+                    android:id="@+id/textViewBestSavingDegreeMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x年x月" />
+
+                <TextView
+                    android:id="@+id/textViewBestSavingDegree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x度" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <include layout="@layout/divider_vertical" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累積節電量" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x年x月起" />
+
+                <TextView
+                    android:id="@+id/textViewTotalSavingDrgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x度" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <include layout="@layout/divider_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累積減少CO2排放" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x年x月起" />
+
+                <TextView
+                    android:id="@+id/textViewTotalSavingCo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x公斤" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="圖表（TODO）" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth1"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth2"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth3"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth4"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth5"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth6"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth7"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewMonth8"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="#c9c9c9"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textViewYear8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c9c9c9"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:text="104年12月份電費"
+            android:textColor="#ff0000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <include layout="@layout/bottom_bar" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buttonAccountManagement"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="20"
+        android:onClick="changePage"
+        android:text="帳號" />
+
+    <Button
+        android:id="@+id/buttonElectricUsageHistory"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="20"
+        android:onClick="changePage"
+        android:text="紀錄" />
+
+    <Button
+        android:id="@+id/buttonSavingPlan"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="20"
+        android:onClick="changePage"
+        android:text="節電" />
+
+    <Button
+        android:id="@+id/buttonRecordUsage"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="20"
+        android:onClick="changePage"
+        android:text="抄表" />
+
+    <Button
+        android:id="@+id/buttonMore"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="20"
+        android:onClick="changePage"
+        android:text="更多" />
+
+</LinearLayout>
