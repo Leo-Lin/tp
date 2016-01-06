@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="name"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        android:id="@+id/textViewSaveTipName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="method"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:id="@+id/textViewSaveTipMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

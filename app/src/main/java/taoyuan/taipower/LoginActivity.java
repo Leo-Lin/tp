@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
+import com.parse.ParseInstallation;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
@@ -35,6 +36,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void done(ParseUser user, ParseException e) {
                 progressDialog.dismiss();
+
+                ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+                installation.put("userId", user.getObjectId());
+                installation.saveInBackground();
 
                 if (user == null) {
                     Toast.makeText(LoginActivity.this, "登入失敗", Toast.LENGTH_SHORT).show();

@@ -1,12 +1,14 @@
 package taoyuan.taipower;
 
 import android.app.Application;
+
 import com.parse.Parse;
+import com.parse.ParseInstallation;
 
 /**
  * @author leolin
  */
-public class MyApplication extends Application{
+public class MyApplication extends Application {
 
     @Override
     public void onCreate() {
@@ -15,5 +17,11 @@ public class MyApplication extends Application{
         Parse.enableLocalDatastore(this);
 
         Parse.initialize(this);
+
+//        ParseInstallation.getCurrentInstallation().saveInBackground();
+
+        ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+        installation.put("user", "leo");
+        installation.saveInBackground();
     }
 }
